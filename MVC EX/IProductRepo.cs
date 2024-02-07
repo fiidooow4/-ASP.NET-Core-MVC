@@ -6,7 +6,7 @@ namespace MVC_EX
     {
         string? GetAllProduct(int id);
         public IEnumerable<Product> GetAllProducts();
-        string? GetProduct(int id);
+        Product GetProduct(int id);
         public void UpdateProduct(Product product);
         public void InsertProduct(Product productToInsert);
         public IEnumerable<Category> GetCategories();

@@ -29,7 +29,7 @@ namespace MVC_EX
             _conn.Execute("DELETE FROM Products WHERE ProductID = @id;", new { id = product.ProductID });
         }
 
-        
+
         public Product GetAllProduct(int id)
         {
             return _conn.QuerySingle<Product>("SELECT * FROM PRODUCTS WHERE PRODUCTID = @id", new { id = id });
@@ -64,11 +64,5 @@ namespace MVC_EX
         {
             throw new NotImplementedException();
         }
-
-        string? IProductRepo.GetProduct(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
-
 }
